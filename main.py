@@ -7,8 +7,7 @@ app = FastAPI()
 async def root_get():
     return {"message": "Hello World"}
 
-@app.post("/", tags=["post测试结构"]
-          ,deprecated=True)
+@app.post("/", tags=["post测试结构"],deprecated=True)
 async def root_post():
     return {"message": "Hello World post"}
 
